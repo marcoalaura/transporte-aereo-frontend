@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sistema Único de Viajes</title>
+  <script src="./config.js"></script>
+  <script>
+    (function () {
+      window.localStorage.removeItem('transporte_menu');
+      window.localStorage.removeItem('transporte_token');
+      window.localStorage.removeItem('transporte_sidenav');
+      window.localStorage.removeItem('transporte_permissions');
+      window.localStorage.removeItem('transporte_user');
+      window.localStorage.removeItem('transporte_oauth2_state');
+      window.location = subdomain + '/#/login';
+    })();
+  </script>
+</head>
+<body></body>
+</html>

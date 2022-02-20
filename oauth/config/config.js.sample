@@ -1,0 +1,2 @@
+var backend_api = 'https://test.agetic.gob.bo/transporte-backend';
+var subdomain = '/transporte';

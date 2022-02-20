@@ -1,0 +1,214 @@
+@import '../../../assets/scss/_variables.scss';
+
+$textColor: #99abb4;
+
+.app-login.application.theme--light {
+  background-image: url(../../../assets/images/logos/airplane.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .application--wrap {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .logo-app {
+    width: 280px;
+    height: 60px;
+    margin: 0 auto 20px;
+    // background: transparent url(../../../assets/images/logo.png) no-repeat;
+    background-size: 100%;
+  }
+
+  .title-app {
+    text-align: center;
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 300;
+      color: darken($primary, 8%);
+      line-height: 3.2rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      letter-spacing: 0.6px;
+      font-weight: 300;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 3rem;
+    }
+  }
+
+  .logos-app {
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 80px;
+      margin: 0 5px;
+
+      &.oopp {
+        width: 70px;
+      }
+
+      &.sabsa {
+        // margin-top: -15px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .login-container {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &.login-ciudadania {
+      .login-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .login-form {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    border-top: 5px solid $warning;
+
+    &.v-card {
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    form > .v-card__title:not(:last-child) {
+      padding-bottom: 0;
+    }
+
+    // form > .card__title:last-child {
+    //   margin-top: 20px;
+
+    //   a {
+    //     color: white;
+    //     display: inline-block;
+    //     margin: 0 auto;
+    //     text-transform: uppercase;
+    //     font-size: 1rem;
+    //     line-height: 1rem;
+    //   }
+    // }
+
+    h4 {
+      line-height: 1.4rem;
+      padding: 0 5px;
+      color: $primary;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    .line {
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .v-alert {
+      padding: 6px 10px;
+      text-align: justify;
+      background-color: rgba(lighten($info, 33%), .6);
+    }
+
+    .fluid {
+      padding: 5px 5px 0;
+    }
+
+    .v-card__title {
+      color: darken($textColor, 20%);
+      font-size: 0.95rem;
+
+      & > span {
+        margin-right: 5px;
+      }
+    }
+
+    .input-group.checkbox {
+      margin-top: -1px;
+      margin-left: -5px;
+      padding: 0;
+
+      label {
+        margin-top: -4px;
+        color: darken($textColor, 20%);
+      }
+      .input-group__details {
+        display: none;
+      }
+    }
+
+    .login-options {
+      padding-bottom: 7px;
+
+      & > div {
+        width: 100%;
+      }
+
+      a {
+        color: $textColor;
+        font-size: 0.95rem;
+
+        .v-icon {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+
+    .v-card__actions {
+      padding: 0 15px 20px;
+    }
+  }
+}
+
+.login-lang {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, .6);
+
+  .v-btn {
+    margin: 0;
+    .v-btn__content {
+      color: #333;
+    }
+  }
+}
+
+.logos-app {
+  display: none;
+}
+
+.login-container {
+  display: none;
+}
